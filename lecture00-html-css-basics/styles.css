@@ -1,0 +1,51 @@
+h4 {
+    color: darkmagenta;
+    text-align: center;
+}
+
+p { 
+    color: red;
+    font-family: Arial, sans-serif; 
+    font-size: 16px;
+    font-weight: bold;
+}
+
+div {
+    border: 3px solid black;
+    background-color: lightblue;
+    width:200px;
+    margin:20px;
+    padding:20px;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    background-color: lightgray;
+}
+
+#top {
+    font-size:32px;
+}
+
+#middle {
+    font-size:12px;
+}
+
+#bottom {
+    font-size:20px;
+}
+
+.name {
+    font-weight: bold;
+}
