@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Responsive 1</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+
+            @media (min-width: 800px) {
+                h1::before {
+                    content: "Welcome to my web page!";
+                }
+            }
+
+            @media (max-width: 799px) {
+                h1::before {
+                    content: "Welcome!";
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1></h1>
+    </body>
+
+</html>
