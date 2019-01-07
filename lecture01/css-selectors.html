@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS</title>
+    <style>
+        /* This CSS will be applied to both h1 and h2 */
+        h1, h2 {
+            color:darkgreen;
+        }
+
+        /* Descendant selector */
+        /* If there is a li which is a descendant of ol, it will be styled by this */
+        ol li {
+            color:blue;
+        }
+
+        /* Immediate child selector */
+        /* ol > li  { foo } */
+        /* This will only style immdeiatechildren of parent tag */
+
+        /* Style inputs of specified type attribute */
+        input[type=text] {
+            background-color: lightgray;
+        }
+        input[type=number] {
+            background-color: yellow;
+        }
+
+        button { 
+            width:200px;
+            height:50px;
+            font-size: 24px;
+            background-color:green;
+        }
+
+        /* CSS Pseudo-class selector */
+        button:hover {
+            background-color:orange;
+        }
+
+        /* CSS Pseudo-element selector*/
+        /* Apply style before contents of <a> tag */
+        a::before {
+            content: "\21d2 Click here: ";
+            font-weight:bold;
+        }
+
+        /* CSS Selection selector */
+        p::selection {
+            color:white;
+            background-color:black;
+        }
+
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+           width: 50%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Big Headline</h1>
+    <h2>Smaller Headline</h2>
+
+    <ol>
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <ul>
+            <li>sublist item 1</li>
+            <li>sublist item 2</li>
+        </ul>
+        <li>list item 3</li>
+    </ol>
+
+    <form>
+        <input name="name" type="text" placeholder="First name">
+        <input name="name" type="text" placeholder="Last name">
+        <input name="name" type="number" placeholder="Age">
+    </form>
+
+    <button>Click me!</button>
+
+    <ul>
+        <li><a href=https://google.com>Google </a> </li> <li><a href=https://reddit.com>Reddit </a> </li> <li><a href=https://8ch.net>8chan
+                        </a> </li> </ul> <p>This text will be styled by a CSS selection selector when highlighted.</p>
+
+                        <table>
+                            <tr>
+                                <td>a,b</td>
+                                <td>Multiple Element Selector</td>
+                            </tr>
+                            <tr>
+                                <td>a b</td>
+                                <td>Descendant selector</td>
+                            </tr>
+                            <tr>
+                                <td>a > b</td>
+                                <td>Child Selector</td>
+                            </tr>
+                            <tr>
+                                <td>a + b</td>
+                                <td> Adjacent sibling selector</td>
+                            </tr>
+                            <tr>
+                                <td>[a=b]</td>
+                                <td>Attribute selector</td>
+                            </tr>
+                            <tr>
+                                <td>a:b</td>
+                                <td>Attribute Selector</td>
+                            </tr>
+                            <tr>
+                                <td>a::b</td>
+                                <td>Pseudoelement Selector</td>
+                            </tr>
+                        </table>
+
+</body>
+
+</html>

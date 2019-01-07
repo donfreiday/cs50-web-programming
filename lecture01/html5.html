@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML5 Organization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>This is the &lt;header&gt;</header>
+
+    <nav>This is the &lt;nav&gt;</nav>
+
+    <section class="card">
+        <h2>Section 1</h2>
+        <p>This is a &lt;section&gt;</p>
+    </section>
+
+    <section class="card">
+        <h2>Section 2</h2>
+        <p>This is another section; here is an &lt;audio&gt; element:</p>
+        <audio controls>
+            <source src="01 - Modular Mix.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <section>
+        <h2>Section 3</h2>
+        <p>This is a third section, <strong>not</strong> of class 'card', containing a &lt;video&gt; element:</p>
+        <video controls>
+            <source src="Don's First Snowskate 2018.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="card">
+        <h2>Section 4</h2>
+        <p>This is the fourth section, demonstrating the &lt;form&gt;, &lt;input&gt; and &lt;datalist&gt; tags:</p>
+        <form>
+            <div>
+                <input name="name" type="text" placeholder="Name">
+                <input name="password" type="password" placeholder="Password">
+            </div>
+            <div>
+                Favorite color?
+                <input name="color" type="radio" value="red"> Red
+                <input name="color" type="radio" value="green"> Green
+                <input name="color" type="radio" value="blue"> Blue
+                <input name="color" type="radio" value="other"> Other
+            </div>
+            <div>
+                <input name="country" list="countries" placeholder="Country">
+                <datalist id="countries">
+                    <option value="USA">
+                    <option value="France">
+                    <option value="Germany">
+                </datalist>
+
+            </div>
+        </form>
+    </section>
+
+    <footer>This is the &lt;footer&gt; element</footer>
+</body>
+
+</html>
