@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My website!</title>
+    </head>
+    <body>
+        <!-- Double brackets are Jinja2 templating syntax -->
+        <h1>{{ headline }}</h1>
+        
+        <!-- Jinja2 template conditionals -->
+        {% if new_year %}
+            <h1>Yes! Happy New Year!</h1>
+        {% else %}
+            <h1>NO</h1>
+        {% endif %}
+    </body>
+</html>
